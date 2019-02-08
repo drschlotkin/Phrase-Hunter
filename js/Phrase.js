@@ -1,6 +1,6 @@
 class Phrase{
 
-    // Assign current phrase to object
+    // Assign active phrase to object
      constructor(phrase){
         this.phrase = phrase.toLowerCase();
      };
@@ -8,7 +8,7 @@ class Phrase{
 
      // Display phrase on screen and hide letters
      addPhraseToDisplay(){
-        const phraseString = this.phrase.split('');
+        let phraseString = this.phrase.split('');
         let letterCount = 0;
         phraseString.map((e) => {
             let listItem = document.createElement('li');

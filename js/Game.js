@@ -79,8 +79,8 @@ class Game{
         title.style.opacity = '0';
         title.className = result;
         document.querySelector('#game-over-message').textContent = message;
-        var op = parseFloat(title.style.opacity);
-        var timer = setInterval( () => {
+        let op = parseFloat(title.style.opacity);
+        let timer = setInterval( () => {
             if(op >= 1.0) clearInterval(timer);
             op += 0.1;
             title.style.opacity = op;
@@ -90,7 +90,7 @@ class Game{
 
     // Prepare for next game by resetting all styles back to original
     gameReset(){
-        let mainHeader = document.querySelector('.header')
+        let mainHeader = document.querySelector('.header');
         mainHeader.innerHTML = 'Phrase Hunter';
         mainHeader.style.color = '#fff';
         this.missed = 0;

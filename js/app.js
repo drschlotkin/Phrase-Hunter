@@ -4,7 +4,7 @@ let game;
 document.getElementById('btn__reset').addEventListener('click', () => {
     game = new Game();  
     game.startGame();   
-})
+});
 
 
 // Listen for virtual keyboard event
@@ -18,7 +18,7 @@ document.addEventListener('click', (e) => {
 document.addEventListener('keypress', (e) => {
     if(document.getElementById('overlay').style.visibility == 'hidden'){
         let letter = String.fromCharCode(e.keyCode);
-        var reg = /[a-zA-Z]+/;
+        let reg = /[a-z]+/;
         if (reg.test(letter)) game.handleInteraction(letter);
     };
  });
