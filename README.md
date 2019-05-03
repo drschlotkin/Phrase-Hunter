@@ -1,16 +1,8 @@
-# OOP Game Show App
+# Phrase Hunter
 
-<a href="https://teamtreehouse.com" target="_blank">Team Treehouse</a> Full Stack Techdegree - Project #4
+## Details
 
-## Introduction
-
-* Javascript and minor css styling created by Ewen Earle
-* HTML and CSS provided by Team Treehouse
-
-## Additions
-
-* A fade in method for the end game screen
-* A warning message for last heart
-* Body and text colors were changed from the default
-
-
+* Created with JavaScript and Object Oriented programming principles
+* A player can try and guess the hidden phrase using an onscreen keyboard
+* Each time the player guesses a letter, the gameboard displays the letter
+* You get five guesses and a losing screen will appear if you run out
